@@ -1,0 +1,24 @@
+body
+{
+    background-color: gray;
+}
+
+*[id$="-list"]
+{
+    height: 30vh;
+    overflow-x: auto;
+}
+
+.selectable:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 768px)
+{
+    *[id$="-list"]
+    {
+        height:60vh;
+    }
+}
